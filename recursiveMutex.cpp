@@ -47,7 +47,7 @@ int main() {
 
 // If you can't understand the recursion part then look at the iterative approach
 // Example 2; With Loops
-
+/*
 std::recursive_mutex m1;
 
 int main() {
@@ -62,6 +62,7 @@ int main() {
     }
     return 0;
 }
+*/
 
 
 
