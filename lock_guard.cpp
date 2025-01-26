@@ -20,7 +20,7 @@ void task(const char* threadNumber, int loopFor) {
     // m1.lock();
     for (int i = 0; i<loopFor; ++i) {
         buffer++;
-        std::cout << "ThreadNumber: " << buffer << std::endl;
+        std::cout << threadNumber  << " "<< buffer << std::endl;
     }
     // m1.unlock();
 }
