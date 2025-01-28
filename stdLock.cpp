@@ -62,7 +62,7 @@ void task1() {
 void task2() {
     while(1) {
         //std::lock(m2, m1);
-        m2.lock();
+        m2.lock(); // Same shit gonna happen here as well
         m1.lock();
         std::cout << "task b \n";
         m2.unlock();
