@@ -1,4 +1,4 @@
-// Topic:- Threading in C++11 from Scratch...
+// Topic:- 
 
 #include<iostream>
 #include<thread>
