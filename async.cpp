@@ -34,21 +34,7 @@ ull findOdd(ull start, ull end) {
     return oddSum;
 }
 
-int main() {
-    ull start = 0, end = 1900000000;
 
-    std::cout<< "ThreadId: " << std::this_thread::get_id() << std::endl;
-    std::cout<< "Thread created if policy is std::launch::async!!" <<std::endl;
-    std::future<ull> oddSum = std::async(std::launch::async, findOdd, start, end);
-
-    std::cout << "Waiting for the Result: " <<std::endl;
-
-    std::cout<< "OddSum: " << oddSum.get() << std::endl;
-
-    std::cout<< "Completed " << std::endl; 
-
-    return 0;
-}
 
 
 
