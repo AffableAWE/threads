@@ -1,31 +1,31 @@
-// Problem Statement: Producer-Consumer Problem (Bounded Buffer Implementation)
-// --------------------------------------------------------------
-// - This program demonstrates a solution to the Producer-Consumer problem
-//   using threads, mutexes, and condition variables in C++.
-//
-// Description:
-// - We have a shared buffer (deque) of limited size (`max_buffer`).
-// - The producer thread generates values (starting from 100) and adds them to the buffer.
-// - The consumer thread removes values from the buffer and processes them.
-//
-// Constraints:
-// 1. The producer must wait if the buffer is full (i.e., `buffer.size() == max_buffer`).
-// 2. The consumer must wait if the buffer is empty (i.e., `buffer.size() == 0`).
-//
-// Tools Used:
-// 1. **Mutex (`std::mutex`)**: Ensures that access to the shared buffer is thread-safe.
-// 2. **Condition Variable (`std::condition_variable`)**:
-//    - Used to block the producer when the buffer is full and unblock it when space becomes available.
-//    - Used to block the consumer when the buffer is empty and unblock it when new data is produced.
-//
-// Behavior:
-// - The producer pushes values into the buffer, decrementing from 100.
-// - The consumer pops values from the buffer and prints them.
-// - Synchronization is handled using condition variables to avoid race conditions or deadlocks.
-//
-// Objective:
-// - Efficiently synchronize producer and consumer threads, ensuring no data is lost, and resources 
-//   are utilized effectively.
+/* Problem Statement: Producer-Consumer Problem (Bounded Buffer Implementation)
+-------------------------------------------------------------------------------
+- This program demonstrates a solution to the Producer-Consumer problem using threads, mutexes, and condition variables in C++.
+
+Description:
+- We have a shared buffer (deque) of limited size (`max_buffer`).
+- The producer thread generates values (starting from 100) and adds them to the buffer.
+- The consumer thread removes values from the buffer and processes them.
+
+Constraints:
+1. The producer must wait if the buffer is full (i.e., `buffer.size() == max_buffer`).
+2. The consumer must wait if the buffer is empty (i.e., `buffer.size() == 0`).
+
+Tools Used:
+1. **Mutex (`std::mutex`)**: Ensures that access to the shared buffer is thread-safe.
+2. **Condition Variable (`std::condition_variable`)**:
+   - Used to block the producer when the buffer is full and unblock it when space becomes available.
+   - Used to block the consumer when the buffer is empty and unblock it when new data is produced.
+
+Behavior:
+- The producer pushes values into the buffer, decrementing from 100.
+- The consumer pops values from the buffer and prints them.
+- Synchronization is handled using condition variables to avoid race conditions or deadlocks.
+
+Objective:
+- Efficiently synchronize producer and consumer threads, ensuring no data is lost, and resources 
+  are utilized effectively.
+*/
 
 #include <iostream>
 #include <thread>
