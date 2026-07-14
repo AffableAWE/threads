@@ -8,8 +8,6 @@
 //      b. Ask promise if the value is available.
 //      c. Wait for the promise.
 
-// Program
-
 #include <iostream>
 #include <thread>
 #include <future>
