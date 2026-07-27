@@ -1,5 +1,5 @@
 // Topic:- Recursive Mutex in C++
-// There's no such thing called recursive mutex, it jus a myth
+// myth busted and vanished  
 // Notes;
 // 0. It is same as mutex but, same thread can lock one mutex multiple times using recursion mutex.
 // 1. If thread T1 first call lock/try_lock on recursive mutex m1, then m1 is locked by T1, now as T1
