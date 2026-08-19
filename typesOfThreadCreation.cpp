@@ -1,4 +1,4 @@
-:Wq#include<iostream>
+#include<iostream>
 #include<thread>
 
 using namespace std;
