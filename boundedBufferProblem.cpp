@@ -1,8 +1,6 @@
 /* Problem Statement: Producer-Consumer Problem (Bounded Buffer Implementation)
 -------------------------------------------------------------------------------
 - This program demonstrates a solution to the Producer-Consumer problem using threads, mutexes, and condition variables in C++.
-- Included deadlock example as well
-- Main function is a single threaded runnning process
 
 Description:
 - We have a shared buffer (deque) of limited size (`max_buffer`).
