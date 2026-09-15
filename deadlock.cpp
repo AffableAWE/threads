@@ -1,4 +1,4 @@
-// Topic:- Deadlock - (just an example)
+// Topic:- Deadlock 
 
 #include <iostream>
 #include <mutex>
