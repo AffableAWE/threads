@@ -6,7 +6,7 @@
 // 2. std::future
 //      a. used to get values from promise.
 //      b. Ask promise if the value is available.
-//      c. Wait for the promise.
+//      c. Wait for the promise...
 
 #include <iostream>
 #include <thread>
