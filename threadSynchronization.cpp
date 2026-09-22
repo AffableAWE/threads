@@ -5,7 +5,7 @@
 // Points;
 // 0. Thread OR Process synchronize to access critical section.
 // 1. Critical Section is one or more collection of program statements which should be executed by only thread
-//    or process at a time. 
+//    or process at a time...
 
 #include <iostream>
 #include <thread>
