@@ -20,6 +20,7 @@
 #include <iostream>
 #include <thread>
 #include <future>
+#include <algorithm>
 
 typedef long int ull;
 
