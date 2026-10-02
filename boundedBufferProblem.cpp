@@ -24,7 +24,7 @@ Behavior:
 
 Objective:
 - Efficiently synchronize producer and consumer threads, ensuring no data is lost, and resources 
-  are utilized effectively...
+  are utilized effectively.
 */
 
 #include <iostream>
