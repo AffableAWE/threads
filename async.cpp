@@ -15,7 +15,7 @@
 //    so eventually return value will be available in std::future object.
 
 // Side Notes;
-// 1. We can send functors and lambda functions as callback to std::async, it will work the same
+// 1. We can send functors and lambda functions as callback to std::async, it will work the same.
 
 #include <iostream>
 #include <thread>
