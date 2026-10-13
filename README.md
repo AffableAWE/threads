@@ -1,4 +1,4 @@
-# threads: C++11 multithreading from scratch
+# threads: C++11 multithreading 
 
 Runnable examples for learning C++11 threading, one concept per file, with notes in the comments at the top of each. The files were written as the topics came up, so this README puts them in the order they make sense to study.
 
