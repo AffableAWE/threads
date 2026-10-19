@@ -1,6 +1,7 @@
 // Topic:- std::async
 
 // Notes;
+
 // 1. It runs a function asynchronously (potentially in a new thread) and returns a std::future that
 //    will hold the result.
 // 2. There are 3 launch policies for creating task;
